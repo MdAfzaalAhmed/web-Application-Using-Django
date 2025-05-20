@@ -1,0 +1,66 @@
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About section</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  
+<nav>
+    <div class="logo">MyLogo</div>
+    <ul>
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+    <li><a href="{% url 'form' %}">Form</a></li>
+    </ul>
+</nav>
+<section id="aboutsec">
+  <div class="aboutbox">
+    <h1>...About Our Website...</h1>
+    <p>
+      Welcome to TechSpark, a student-led initiative founded in 2023 with a passion for innovation, learning, and digital creativity.
+      Our mission is to empower students with hands-on learning experiences in web development, app design, and data analytics.
+      We build responsive websites, develop Android apps, and create insightful data visualizations using Power BI.
+      We believe in learning by doing, sharing knowledge, and building a supportive tech community.
+      Unlike other student groups, we focus on real-world projects and mentorship from industry professionals.
+      Led by Md Tausif, a passionate developer with experience in web, Android, and data tools.
+      Explore our work, collaborate with us, or reach out — we’d love to connect!
+      We are a team of tech enthusiasts from Haldia Institute of Technology, driven by the goal of turning ideas into reality.
+       Specializing in web development, Android apps, and data analytics, we use modern tools to build meaningful digital solutions. 
+       Our journey began in 2023, and we continue to grow with every line of code we write. Whether you're looking for collaboration,
+        inspiration, or support, our doors are always open.
+      Welcome to our website — a platform built to showcase creativity, knowledge, and innovation.
+       Whether you're here to explore our projects, learn new tech skills, or connect with like-minded individuals, 
+       this website is designed with you in mind. From interactive web applications to insightful data visualizations, 
+       we present a collection of work that reflects our passion for technology and continuous learning.
+        With a clean design and user-friendly layout, we aim to deliver a smooth and engaging experience for every visitor. 
+        Stay tuned as we keep updating the site with new ideas, projects, and tech resources.
+      This website is a reflection of our passion for technology, development, and continuous learning. Built with modern web technologies, it serves as a digital space where creativity meets functionality. Whether you're a student, developer, recruiter, or tech enthusiast, our goal is to provide a clear insight into the skills, projects, and vision that drive us forward.
+
+       Here,  app showcases, and data analysis projects crafted using tools like HTML, CSS, JavaScript, Power BI, and more. Each project demonstrates our focus on clean design, responsive layouts, and real-world problem-solving.
+
+        The website also highlights our learning journey — from workshops and certifications to hands-on projects and collaborations. It’s more than just a portfolio; it's a growing archive of experiences, challenges, and achievements.
+    </p>
+  </div>
+</section>
+           
+   
+<footer id="foot">
+    <div class="b1">
+    <h1>Md Afzaal Ahmed</h1>
+    <h2>since dd/mm/yyyy</h2>
+    <p>© 2025 Your Company. All rights reserved.</p>
+    </div>
+    <div class="b2">
+      <img src="{% static 'img/p5.jpeg' %}" alt="img">
+    </div>
+  <script src="{% static 'js/script.js' %}"></script>
+</footer>
+</body>
+</html>

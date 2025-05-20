@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website with Navbar</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <script>
+    const urls = {
+      form: "{% url 'form' %}",
+      index: "{% url 'index' %}"
+    };
+
+    function goToForm() {
+      window.location.href = urls.form;
+    }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyLogo</div>
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'form' %}">Form</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Welcome to my website</h1>
+    <br>
+    <h3>Useful Machines</h3>
+     {% csrf_token %}
+    <div class="abcde">
+      <div class="bigbox">
+        <img src="{% static 'img/p1' %}" alt="Laptop">
+        <h4>Laptops</h4>
+        <p>Your dreams are only a few keystrokes away</p>
+        <button ><a href="{% url 'form' %}" class="btn">Buy!</a></button>
+
+      </div>
+      <div class="bigbox">
+        <img src="{% static 'img/p2.jpeg' %}" alt="Mobile">
+        <h4>Mobiles</h4>
+        <p>Your dreams are only a few keystrokes away</p>
+         <button ><a href="{% url 'form' %}" class="btn">Buy!</a></button>
+
+      </div>
+      <div class="bigbox">
+        <img src="{% static 'img/p3.jpg' %}" alt="Headphone">
+        <h4>Headphones</h4>
+        <p>Your dreams are only a few keystrokes away</p>
+        <button ><a href="{% url 'form' %}" class="btn">Buy!</a></button>
+
+      </div>
+      <div class="bigbox">
+        <img src="{% static 'img/p4.jpeg' %}" alt="Tablet">
+        <h4>Tabs</h4>
+        <p>Your dreams are only a few keystrokes away</p>
+        <button ><a href="{% url 'form' %}" class="btn">Buy!</a></button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="foot">
+    <div class="b1">
+      <h1>Md Afzaal Ahmed</h1>
+      <h2>since dd/mm/yyyy</h2>
+      <p>© 2025 Your Company. All rights reserved.</p>
+    </div>
+    <div class="b2">
+      <img src="{% static 'img/p5.jpeg' %}" alt="Logo">
+    </div>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

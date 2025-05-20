@@ -1,0 +1,310 @@
+
+    body{
+      background: grey;
+    }
+    body::-webkit-scrollbar{
+    width: 10px;
+    
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 200000000px;
+    
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+      }
+
+      nav.active ul {
+        display: flex;
+      }
+    }
+
+    #welcome-section {
+      background-color: grey;
+      height: 580px;
+
+      
+    }
+    #welcome-section h1{
+      text-align: center;
+      font-size: 35px;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: antiquewhite;
+      
+    }
+    #welcome-section h3{
+      text-align: center;
+      font-size: 20px;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: antiquewhite;
+      margin: 20px;
+    }
+    .abcde{
+      margin-top: 40px;
+        display:flex;
+        justify-content: space-evenly;
+}
+#welcome-section .bigbox{
+      border-radius: 15px;
+      box-shadow: 15px 15px 50px white;
+      width: 20%;
+      height: 420px;
+      transition: 1s ease;
+      
+    }
+#welcome-section .bigbox:hover{
+  box-shadow: 15px 15px 50px black;
+}    
+    
+#welcome-section .bigbox img{
+  margin-top:15px;
+  width: 100%;
+  height: 250px;
+  background-color: #333;
+}  
+#welcome-section .bigbox h4{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+
+}
+#welcome-section .bigbox p{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}  
+#welcome-section .bigbox button{
+  width:30%;
+  height: 10%;
+  margin-left:100px ;
+  margin-top: 10px;
+  background-color: coral;
+  font-size: 25px;
+  box-shadow: 0  15px 25px  #333;
+}
+#foot {
+      background-color: #333;
+      color: #fff;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+#foot .b1 h1{
+  padding: 0;
+  margin: 0;
+}    
+#foot .b1 h4{
+  padding: 0;
+  margin: 0;
+}
+#foot .b2 img{
+  width: 200px;
+  height: 96px;
+  margin-top: 2px;
+
+} 
+#aboutsec{
+  display: flex;
+  justify-content: space-evenly;
+}
+#aboutsec .aboutbox{
+background-color: aliceblue;
+margin: 20px;
+height: 560px;
+width: 80%;
+border-radius: 10px;
+box-shadow: 0px 15px 80px white; 
+}   
+#aboutsec .aboutbox:hover{
+  box-shadow: 0px 15px 80px black; 
+}
+
+#aboutsec .aboutbox h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  color: blue;
+
+}
+#aboutsec .aboutbox p{
+  margin: 20px;
+  font-size: 20px;
+  font-display: swap;
+}
+.form-container {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 25px;
+      
+      box-shadow: 15px 15px 100px white;
+    }
+.form-container:hover{
+      border-radius: 10px;
+            box-shadow: 15px 15px 100px  black;
+
+}    
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+      .contact-container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      
+      box-shadow: 0 10px 25px white;
+    }
+    .contact-container:hover{
+
+      box-shadow: 0 10px 25px rgb(0, 0, 0);
+      border-radius: 10px;
+
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      color: #555;
+    }
+    .contact-info {
+      margin: 20px 0;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    form .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 12px 20px;
+      background: greenyellow;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+ 
